@@ -1,0 +1,95 @@
+/* 背景图片 */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image: url("./Furina.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  opacity: 0.65;
+}
+
+/* body透明 */
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: transparent;
+}
+
+/* 导航栏 */
+.brand{
+	background: linear-gradient(135deg, #e0e0e0, #eaeaea);
+	margin-top: 0;
+	margin-left: 0;
+	width: 100%;
+	height: 60px;
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	text-decoration: none;
+	color: var(--ink);
+	font-weight: 700;
+	font-size: 20px;
+	opacity: 0.8;
+	box-shadow: 0 6px 14px rgba(79, 124, 255, 0.25);
+}
+
+/* 导航栏商标 */
+.brand_badge{
+	margin-left: 50px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 38px;
+	height: 38px;
+	border-radius: 12px;
+	background: linear-gradient(135deg, #6b9bff, #4f7cff);
+	color: #fff;
+	font-size: 18px;
+	box-shadow: 0 6px 14px rgba(79, 124, 255, 0.25);
+}
+
+/* 导航栏名字 */
+.brand_name{
+	letter-spacing: 0.02em;
+	color:#4f7cff;
+}
+
+.content{
+	position: relative;
+	margin-top: 50px;
+	text-align: center;
+	width: 70%;
+	padding-left: 15%;
+}
+
+/* 各个板块 */
+.division{
+	text-align: left;
+	height: auto;
+	background: rgba(255,255,255,0.45);
+	border-radius: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 30px;
+}
+
+.subtitle{
+	font-size: 24px;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-left: 20px;
+}
+
+.subcontent{
+	font-size: 18px;
+	margin-left: 20px;
+	padding-bottom: 5px;
+}
+
+.href{
+	text-decoration-line: none;
+}
